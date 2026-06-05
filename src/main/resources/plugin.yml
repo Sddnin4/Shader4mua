@@ -1,0 +1,28 @@
+name: Shader4mua
+version: '1.0.0'
+main: me.bonmua.Main
+api-version: '1.20'
+description: Plugin hiệu ứng Shader bốn mùa cho Paper 1.20.4
+authors: [ bonmua ]
+
+commands:
+  season:
+    description: Xem mùa và ngày hiện tại
+    usage: /season
+    permission: shader4mua.season
+  setseason:
+    description: Đặt mùa thủ công
+    usage: /setseason <XUAN|HA|THU|DONG>
+    permission: shader4mua.admin
+  nextseason:
+    description: Chuyển sang mùa tiếp theo ngay lập tức
+    usage: /nextseason
+    permission: shader4mua.admin
+
+permissions:
+  shader4mua.season:
+    description: Xem thông tin mùa hiện tại
+    default: true
+  shader4mua.admin:
+    description: Quản trị mùa
+    default: op
